@@ -1,0 +1,19 @@
+@use 'variables' as var;
+
+.btn {
+  color: #292929;
+  font-size: 17px;
+  line-height: 1.3;
+  padding: 15px 45px;
+  border-radius: 50%;
+  border: 1px solid var$primary-color;
+  cursor: pointer;
+
+  &_primary {
+    background: var$primary-color;
+  }
+
+  &_secondary {
+    background: #fff;
+  }
+}
