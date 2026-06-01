@@ -1,0 +1,25 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "The task [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage0.5%20Bootcamp/tasks/shelter/shelter.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NataliItaly/shelter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NataliItaly/shelter/issues"
+  },
+  "homepage": "https://github.com/NataliItaly/shelter#readme",
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}
