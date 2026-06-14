@@ -1,0 +1,7 @@
+@use './variables' as var;
+
+@mixin basic-text {
+  font-family: var.$primary-font-family;
+  font-size: 15px;
+  line-height: 160%;
+}

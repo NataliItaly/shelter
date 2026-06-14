@@ -1,0 +1,9 @@
+@use './variables' as var;
+
+.friends {
+  background: var.$light-bg-color;
+  &__title {
+    text-align: center;
+    margin: 0 auto 60px;
+  }
+}

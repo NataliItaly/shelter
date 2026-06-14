@@ -30,7 +30,8 @@
   }
 
   &__menu-link {
-    color: var$text-color-secondary;
+    display: block;
+    color: var.$text-color-secondary;
     font-size: 15px;
     line-height: 1.6;
     position: relative;
@@ -42,12 +43,12 @@
       bottom: 0;
       width: 0;
       height: 3px;
-      background: var$primary-color;
+      background: var.$primary-color;
       transition: all 0.4s;
     }
 
     &_active {
-      color: var$text-color-active;
+      color: var.$text-color-active;
 
       &::after {
         width: 100%;
