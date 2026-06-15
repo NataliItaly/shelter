@@ -403,6 +403,7 @@ h4 {
   color: #292929;
 }
 .pets .friends__list {
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
 .pets .friends__slider-buttons {
