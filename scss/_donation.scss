@@ -10,6 +10,8 @@
 
     & img {
       width: 505px;
+      height: 261px;
+      margin-top: 10px;
     }
   }
 
@@ -33,14 +35,15 @@
     width: fit-content;
     font-family: var.$title-font-family;
     font-size: 20px;
-    line-height: 115%;
-    letter-spacing: 0.06em;
+    line-height: 107%;
+    letter-spacing: 1.2px;
     color: var.$text-color-primary-2;
-    padding: 10px 15px 10px 55px;
+    padding: 10px 15px 10px 60px;
     background:
       url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
       var.$primary-color;
     border-radius: 9px;
+    margin-top: -1px;
   }
 
   &__info {

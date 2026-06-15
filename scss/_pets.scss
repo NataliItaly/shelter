@@ -19,7 +19,9 @@
 
   .friends__list {
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin-bottom: 88px;
   }
 
   .friends__slider-buttons {

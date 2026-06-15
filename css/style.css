@@ -35,7 +35,8 @@ h4 {
   color: #292929;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
-  line-height: 1.3;
+  line-height: 1.1;
+  letter-spacing: 1px;
   padding: 15px 45px;
   border-radius: 100px;
   border: 1px solid #f1cdb3;
@@ -77,6 +78,7 @@ h4 {
   display: flex;
   align-items: center;
   gap: 35px;
+  margin: 0 2px 2px 0;
 }
 .header__menu-link {
   display: block;
@@ -89,7 +91,7 @@ h4 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   width: 0;
   height: 3px;
   background: #f1cdb3;
@@ -119,6 +121,7 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 42px;
+  padding-top: 164px;
 }
 .hero__title {
   max-width: 310px;
@@ -145,10 +148,13 @@ h4 {
   color: #f1cdb3;
   font-size: 32px;
   line-height: 1.1;
+  letter-spacing: 1.8px;
   margin-bottom: 10px;
 }
 .logo__subtitle {
   font-size: 13px;
+  letter-spacing: 1.3px;
+  text-indent: 4px;
   color: #fff;
 }
 
@@ -160,7 +166,7 @@ h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 35px;
   line-height: 130%;
-  letter-spacing: 0.06em;
+  letter-spacing: 2px;
   color: #292929;
 }
 .section__title_center {
@@ -185,13 +191,18 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 160%;
+  padding-left: 4px;
 }
 .about__content p:not(:last-child) {
   margin-bottom: 25px;
 }
+.about__text {
+  width: 430px;
+}
 
 .friends {
   background: #f6f6f6;
+  padding-bottom: 73px;
 }
 .friends__title {
   text-align: center;
@@ -204,10 +215,6 @@ h4 {
   justify-content: center;
   gap: 90px;
   margin-bottom: 60px;
-}
-.friends__list_pets {
-  column-gap: 40px;
-  row-gap: 30px;
 }
 .friends__item {
   width: 270px;
@@ -262,11 +269,14 @@ h4 {
   background: url(../assets/icons/slider-icon.svg) center/14px no-repeat, #fddcc4;
 }
 
+.help {
+  padding-top: 109px;
+}
 .help__title {
   text-align: center;
 }
 .help__list {
-  max-width: 1026px;
+  max-width: 1029px;
   display: flex;
   justify-content: center;
   column-gap: 120px;
@@ -303,6 +313,8 @@ h4 {
 }
 .donation__container img {
   width: 505px;
+  height: 261px;
+  margin-top: 10px;
 }
 .donation__content {
   width: 380px;
@@ -322,12 +334,13 @@ h4 {
   width: fit-content;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
-  line-height: 115%;
-  letter-spacing: 0.06em;
+  line-height: 107%;
+  letter-spacing: 1.2px;
   color: #545454;
-  padding: 10px 15px 10px 55px;
+  padding: 10px 15px 10px 60px;
   background: url(../assets/icons/credit-card.svg) 15px center/30px no-repeat, #f1cdb3;
   border-radius: 9px;
+  margin-top: -1px;
 }
 .donation__info {
   font-style: italic;
@@ -342,7 +355,7 @@ h4 {
 }
 .footer__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 120px;
 }
 .footer__title {
@@ -353,6 +366,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 18px;
 }
 .footer__column:first-of-type {
   width: 278px;
@@ -404,7 +418,9 @@ h4 {
 }
 .pets .friends__list {
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  column-gap: 40px;
+  row-gap: 30px;
+  margin-bottom: 88px;
 }
 .pets .friends__slider-buttons {
   position: static;
