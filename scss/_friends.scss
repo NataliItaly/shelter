@@ -2,8 +2,85 @@
 
 .friends {
   background: var.$light-bg-color;
+
   &__title {
     text-align: center;
-    margin: 0 auto 60px;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    &-title {
+      font-family: var.$title-font-family;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+      color: var.$text-color-primary-2;
+    }
+
+    &-btn {
+      background: transparent;
+    }
+  }
+
+  &__link {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: var.$text-color-active;
+    padding-bottom: 30px;
+    border-radius: 9px;
+
+    &:hover .btn {
+      background: var.$primary-light-color;
+      border-color: var.$primary-light-color;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+
+  &__slider-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider-btn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+      url(../assets/icons/slider-icon.svg) center / 14px no-repeat,
+      transparent;
+    border-radius: 50%;
+    padding: 0;
+
+    &:last-of-type {
+      transform: rotate(-180deg);
+    }
+
+    &:hover {
+      background:
+        url(../assets/icons/slider-icon.svg) center / 14px no-repeat,
+        var.$primary-light-color;
+    }
   }
 }

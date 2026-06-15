@@ -10,5 +10,10 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     color: var.$text-color-primary;
+
+    &_center {
+      text-align: center;
+      margin: 0 auto 60px;
+    }
   }
 }

@@ -1,0 +1,38 @@
+@use './variables' as var;
+
+.help {
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    max-width: 1026px;
+    display: flex;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 55px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &-title {
+      font-family: var.$title-font-family;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: var.$text-color-primary-2;
+    }
+
+    & img {
+      display: block;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

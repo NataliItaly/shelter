@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/start-screen-puppy.png"
+      type="image/x-icon"
+    />
     <title>Shelter</title>
   </head>
   <body>
@@ -16,25 +21,28 @@
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__menu-item">
-              <a href="" class="header__menu-link header__menu-link_active">
+              <a
+                href="#about"
+                class="header__menu-link header__menu-link_active"
+              >
                 About the shelter
               </a>
             </li>
             <li class="header__menu-item">
-              <a href="" class="header__menu-link">Our pets</a>
+              <a href="./pets.html" class="header__menu-link">Our pets</a>
             </li>
             <li class="header__menu-item">
-              <a href="" class="header__menu-link">Help the shelter</a>
+              <a href="#help" class="header__menu-link">Help the shelter</a>
             </li>
             <li class="header__menu-item">
-              <a href="" class="header__menu-link">Contacts</a>
+              <a href="#contacts" class="header__menu-link">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container hero__container">
           <div class="hero__content">
             <h2 class="hero__title">Not only people need a house</h2>
@@ -43,7 +51,9 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </div>
-            <button class="btn btn_primary hero__btn">Make a friend</button>
+            <a href="#friends" class="btn btn_primary hero__btn">
+              Make a friend
+            </a>
           </div>
           <div class="hero__img">
             <img
@@ -53,7 +63,7 @@
           </div>
         </div>
       </section>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container about__container">
           <img
             src="./assets/images/about-pets.png"
@@ -82,117 +92,164 @@
           </div>
         </div>
       </section>
-      <section class="section friends">
+      <section class="section friends" id="friends">
         <div class="container">
-          <h2 class="section__title friends__title">
+          <h2 class="section__title section__title_center friends__title">
             Our friends who
             <br />
             are looking for a house
           </h2>
-          <div class="friend__slider">
+          <div class="friends__slider">
             <ul class="friends__list">
               <li class="friends__item">
-                <h3 class="friends__title">Katrine</h3>
-                <button class="btn btn_secondary friends__btn">
-                  Learn more
-                </button>
+                <a href="#" class="friends__link">
+                  <img
+                    src="./assets/images/pets-katrine.png"
+                    alt="Cat Katrine"
+                  />
+                  <h3 class="friends__item-title">Katrine</h3>
+                  <button class="btn btn_secondary">Learn more</button>
+                </a>
               </li>
               <li class="friends__item">
-                <h3 class="friends__title">Jennifer</h3>
-                <button class="btn btn_secondary friends__btn">
-                  Learn more
-                </button>
+                <a href="#" class="friends__link">
+                  <img
+                    src="./assets/images/pets-jennifer.png"
+                    alt="Dog Jennifer"
+                  />
+                  <h3 class="friends__item-title">Jennifer</h3>
+                  <button class="btn btn_secondary">Learn more</button>
+                </a>
               </li>
               <li class="friends__item">
-                <h3 class="friends__title">Woody</h3>
-                <button class="btn btn_secondary friends__btn">
-                  Learn more
-                </button>
+                <a href="#" class="friends__link">
+                  <img src="./assets/images/pets-woody.png" alt="Dog Woody" />
+                  <h3 class="friends__item-title">Woody</h3>
+                  <button class="btn btn_secondary">Learn more</button>
+                </a>
               </li>
             </ul>
-            <div class="friend__slider-buttons">
-              <button class="friends__slider-btn"></button>
-              <button class="friends__slider-btn"></button>
+            <div class="friends__slider-buttons">
+              <button class="btn btn_secondary friends__slider-btn"></button>
+              <button class="btn btn_secondary friends__slider-btn"></button>
             </div>
           </div>
-          <button class="btn friends__btn">Get to know the rest</button>
+          <a href="./pets.html" class="btn btn_primary friends__btn">
+            Get to know the rest
+          </a>
         </div>
       </section>
-      <section class="section help">
+      <section class="section help" id="help">
         <div class="container">
-          <h2 class="section__title">How you can help our shelter</h2>
+          <h2 class="section__title section__title_center help__title">
+            How you can help
+            <br />
+            our shelter
+          </h2>
           <ul class="help__list">
             <li class="help__item">
+              <img src="./assets/icons/pet-food.svg" alt="car for animals" />
               <h3 class="help__item-title">Pet food</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/transportation.svg"
+                alt="food in the bowl"
+              />
               <h3 class="help__item-title">Transportation</h3>
             </li>
             <li class="help__item">
+              <img src="./assets/icons/toys.svg" alt="ball for animals" />
               <h3 class="help__item-title">Toys</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/bowls-and-cups.svg"
+                alt="bowl for animals"
+              />
               <h3 class="help__item-title">Bowls and cups</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/shampoos.svg"
+                alt="shampoo for animals"
+              />
               <h3 class="help__item-title">Shampoos</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/vitamins.svg"
+                alt="vitamins for animals"
+              />
               <h3 class="help__item-title">Vitamins</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/medicines.svg"
+                alt="medicines for animals"
+              />
               <h3 class="help__item-title">Medicines</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/collars-or-leashes.svg"
+                alt="collars for animals"
+              />
               <h3 class="help__item-title">Collars / leashes</h3>
             </li>
             <li class="help__item">
+              <img
+                src="./assets/icons/sleeping-area.svg"
+                alt="sleeping place"
+              />
               <h3 class="help__item-title">Sleeping areas</h3>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section donation">
-        <div class="container">
-          <h2 class="section__title">You can also make a donation</h2>
-          <p class="donation__subtitle">
-            Name of the bank / Type of bank account
-          </p>
-          <div class="donation__card">8380 2880 8028 8791 7435</div>
-          <div class="donation__info">
-            Legal information and lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus.
+      <section class="section donation" id="donation">
+        <div class="container donation__container">
+          <img
+            src="./assets/images/donation-dog.png"
+            alt="gold a dog laying on the floor"
+          />
+          <div class="donation__content">
+            <h2 class="section__title">You can also make a donation</h2>
+            <p class="donation__subtitle">
+              Name of the bank / Type of bank account
+            </p>
+            <a href="#" class="donation__card">8380 2880 8028 8791 7435</a>
+            <div class="donation__info">
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__contacts">
-          <h2 class="footer__title">For questions and suggestions</h2>
-          <ul class="footer__contacts-list">
-            <li class="footer__contacts-item">
-              <a href="" class="footer__contacts-link">email@shelter.com</a>
-            </li>
-            <li class="footer__contacts-item">
-              <a href="" class="footer__contacts-link">+13 674 567 75 54</a>
-            </li>
-          </ul>
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <div class="footer__column footer__contacts">
+          <h2 class="section__title footer__title">
+            For questions
+            <br />
+            and suggestions
+          </h2>
+          <a href="" class="footer__contacts-link">email@shelter.com</a>
+          <a href="" class="footer__contacts-link">+13 674 567 75 54</a>
         </div>
-        <div class="footer__location">
-          <h2 class="footer__title">For questions and suggestions</h2>
-          <ul class="footer__location-list">
-            <li class="footer__location-item">
-              <a href="" class="footer__contacts-link">
-                1 Central Street, Boston (entrance from the store)
-              </a>
-            </li>
-            <li class="footer__location-item">
-              <a href="" class="footer__contacts-link">18 South Park, London</a>
-            </li>
-          </ul>
+        <div class="footer__column footer__location">
+          <h2 class="section__title footer__title">
+            We are waiting
+            <br />
+            for your visit
+          </h2>
+          <a href="" class="footer__contacts-link">
+            1 Central Street, Boston (entrance from the store)
+          </a>
+          <a href="" class="footer__contacts-link">18 South Park, London</a>
         </div>
         <div class="footer__img">
           <img

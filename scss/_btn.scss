@@ -4,6 +4,7 @@
   display: block;
   width: fit-content;
   color: #292929;
+  font-family: var.$title-font-family;
   font-size: 17px;
   line-height: 1.3;
   padding: 15px 45px;
@@ -22,5 +23,6 @@
 
   &:hover {
     background: var.$primary-light-color;
+    border-color: var.$primary-light-color;
   }
 }
