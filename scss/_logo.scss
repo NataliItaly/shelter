@@ -1,6 +1,8 @@
 @use 'variables' as var;
 
 .logo {
+  display: block;
+
   &__title {
     font-family: var.$title-font-family;
     color: var.$primary-color;
