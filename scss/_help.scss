@@ -1,12 +1,14 @@
 @use './variables' as var;
 
 .help {
+  padding-top: 109px;
+
   &__title {
     text-align: center;
   }
 
   &__list {
-    max-width: 1026px;
+    max-width: 1029px;
     display: flex;
     justify-content: center;
     column-gap: 120px;

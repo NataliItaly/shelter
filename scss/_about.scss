@@ -18,9 +18,14 @@
   &__content {
     max-width: 437px;
     @include mix.basic-text;
+    padding-left: 4px;
 
     & p:not(:last-child) {
       margin-bottom: 25px;
     }
+  }
+
+  &__text {
+    width: 430px;
   }
 }
