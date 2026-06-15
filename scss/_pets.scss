@@ -1,0 +1,68 @@
+@use './variables' as var;
+
+.pets {
+  padding-top: 120px;
+
+  .logo__title,
+  .header__menu-link {
+    color: var.$text-color-primary-2;
+  }
+
+  .header__menu-link:hover::after {
+    background: var.$primary-light-color;
+  }
+
+  .logo__subtitle,
+  .header__menu-link_active {
+    color: var.$text-color-primary;
+  }
+
+  .friends__list {
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .friends__slider-buttons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .friends__slider-btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .friends__slider-btn-page {
+    background: var.$primary-color;
+
+    &:hover {
+      background: var.$primary-light-color;
+    }
+  }
+
+  .friends__pagination-btn {
+    background:
+      url(../assets/icons/slider-icon-pets.svg) center no-repeat,
+      transparent;
+
+    &:hover {
+      background:
+        url(../assets/icons/slider-icon-pets.svg) center no-repeat,
+        var.$primary-light-color;
+    }
+  }
+
+  .friends__pagination-btn-pr {
+    background:
+      url(../assets/icons/slider-icon-single.svg) center no-repeat,
+      transparent;
+
+    &:hover {
+      background:
+        url(../assets/icons/slider-icon-single.svg) center no-repeat,
+        var.$primary-light-color;
+    }
+  }
+}

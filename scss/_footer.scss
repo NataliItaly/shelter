@@ -1,0 +1,70 @@
+@use './variables' as var;
+
+.footer {
+  background:
+    url(../assets/images/bg-noise.png) 120px,
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+  padding: 40px 0 0;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__column {
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:first-of-type {
+      width: 278px;
+
+      & .footer__contacts-link {
+        padding: 4px 0 4px 60px;
+
+        &:first-of-type {
+          background: url(../assets/icons/mail.svg) 0 center / 40px no-repeat;
+        }
+
+        &:last-of-type {
+          background: url(../assets/icons/phone.svg) 0 center / 40px no-repeat;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      width: 302px;
+
+      & .footer__contacts-link {
+        padding-left: 42px;
+        background: url(../assets/icons/pin.svg) 0 center / 22px no-repeat;
+
+        &:last-of-type {
+          padding: 4px 0 4px 42px;
+        }
+      }
+    }
+  }
+
+  &__contacts-link {
+    display: block;
+    font-family: var.$title-font-family;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var.$primary-color;
+  }
+
+  &__img {
+    img {
+      display: block;
+    }
+  }
+}

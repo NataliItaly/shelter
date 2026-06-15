@@ -1,0 +1,52 @@
+@use './variables' as var;
+
+.donation {
+  background: var.$light-bg-color;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    & img {
+      width: 505px;
+    }
+  }
+
+  &__content {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    font-family: var.$title-font-family;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var.$text-color-primary-2;
+  }
+
+  &__card {
+    display: block;
+    width: fit-content;
+    font-family: var.$title-font-family;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var.$text-color-primary-2;
+    padding: 10px 15px 10px 55px;
+    background:
+      url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
+      var.$primary-color;
+    border-radius: 9px;
+  }
+
+  &__info {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var.$text-color-secondary-2;
+  }
+}

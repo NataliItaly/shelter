@@ -1,0 +1,26 @@
+@use './variables' as var;
+@use './mixin' as mix;
+
+.about {
+  color: var.$text-color-primary;
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+  }
+
+  &__content {
+    max-width: 437px;
+    @include mix.basic-text;
+
+    & p:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}

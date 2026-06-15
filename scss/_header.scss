@@ -1,0 +1,64 @@
+@use 'variables' as var;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 0 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  &__subtile {
+    font-size: 13px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__menu-link {
+    display: block;
+    color: var.$text-color-secondary;
+    font-size: 15px;
+    line-height: 1.6;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      background: var.$primary-color;
+      transition: all 0.4s;
+    }
+
+    &:hover::after {
+      width: 100%;
+      background: var.$text-color-secondary-2;
+    }
+
+    &_active {
+      color: var.$text-color-active;
+      pointer-events: none;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
