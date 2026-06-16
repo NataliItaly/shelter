@@ -354,6 +354,10 @@ h4 {
   background: url(../assets/icons/credit-card.svg) 15px center/30px no-repeat, #f1cdb3;
   border-radius: 9px;
   margin-top: -1px;
+  transition: 0.4s;
+}
+.donation__card:hover {
+  background: url(../assets/icons/credit-card.svg) 15px center/30px no-repeat, #fddcc4;
 }
 .donation__info {
   font-style: italic;
