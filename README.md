@@ -16,4 +16,5 @@ Part 1 [link](https://github.com/NataliItaly/shelter/pull/1)
   `npm run sass`
 
 - For deploy
-  `npm run deploy`
+  - Install: `npm install gh-pages --save-dev`
+  - Run: `npm run deploy`

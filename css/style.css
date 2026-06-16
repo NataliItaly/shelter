@@ -150,12 +150,14 @@ h4 {
   line-height: 1.1;
   letter-spacing: 1.8px;
   margin-bottom: 10px;
+  transition: all 0.3s;
 }
 .logo__subtitle {
   font-size: 13px;
   letter-spacing: 1.3px;
   text-indent: 4px;
   color: #fff;
+  transition: all 0.3s;
 }
 
 .section {
@@ -226,6 +228,11 @@ h4 {
   padding-bottom: 30px;
   border-radius: 9px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.friends__item:hover {
+  background: #fff;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
 }
 .friends__item:hover .btn {
   background: #fddcc4;
@@ -262,8 +269,14 @@ h4 {
   border-radius: 50%;
   padding: 0;
 }
-.friends__slider-btn-backward, .friends__slider-btn-prev {
+.friends__slider-btn-next, .friends__slider-btn-forward {
   transform: rotate(-180deg);
+}
+.friends__slider-btn {
+  /* &-backward,
+  &-prev {
+    transform: rotate(-180deg);
+  } */
 }
 .friends__slider-btn:hover {
   background: url(../assets/icons/slider-icon.svg) center/14px no-repeat, #fddcc4;
@@ -375,17 +388,26 @@ h4 {
   padding: 4px 0 4px 60px;
 }
 .footer__column:first-of-type .footer__contacts-link:first-of-type {
-  background: url(../assets/icons/mail.svg) 0 center/40px no-repeat;
+  background: url(../assets/icons/footer-icons/mail.svg) 0 center/40px no-repeat;
+}
+.footer__column:first-of-type .footer__contacts-link:first-of-type:hover {
+  background: url(../assets/icons/footer-icons/mail-hover.svg) 0 center/40px no-repeat;
 }
 .footer__column:first-of-type .footer__contacts-link:last-of-type {
-  background: url(../assets/icons/phone.svg) 0 center/40px no-repeat;
+  background: url(../assets/icons/footer-icons/phone.svg) 0 center/40px no-repeat;
+}
+.footer__column:first-of-type .footer__contacts-link:last-of-type:hover {
+  background: url(../assets/icons/footer-icons/phone-hover.svg) 0 center/40px no-repeat;
 }
 .footer__column:nth-of-type(2) {
   width: 302px;
 }
 .footer__column:nth-of-type(2) .footer__contacts-link {
   padding-left: 42px;
-  background: url(../assets/icons/pin.svg) 0 center/22px no-repeat;
+  background: url(../assets/icons/footer-icons/pin.svg) 0 center/22px no-repeat;
+}
+.footer__column:nth-of-type(2) .footer__contacts-link:hover {
+  background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center/22px no-repeat;
 }
 .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
   padding: 4px 0 4px 42px;
@@ -397,6 +419,10 @@ h4 {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #f1cdb3;
+  transition: all 0.3s;
+}
+.footer__contacts-link:hover {
+  color: #fafafa;
 }
 .footer__img img {
   display: block;
@@ -415,6 +441,10 @@ h4 {
 .pets .logo__subtitle,
 .pets .header__menu-link_active {
   color: #292929;
+}
+.pets .logo:hover .logo__subtitle,
+.pets .logo:hover .logo__title {
+  color: #af7348;
 }
 .pets .friends__list {
   flex-wrap: wrap;
