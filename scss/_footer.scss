@@ -31,11 +31,23 @@
         padding: 4px 0 4px 60px;
 
         &:first-of-type {
-          background: url(../assets/icons/mail.svg) 0 center / 40px no-repeat;
+          background: url(../assets/icons/footer-icons/mail.svg) 0 center / 40px
+            no-repeat;
+
+          &:hover {
+            background: url(../assets/icons/footer-icons/mail-hover.svg) 0
+              center / 40px no-repeat;
+          }
         }
 
         &:last-of-type {
-          background: url(../assets/icons/phone.svg) 0 center / 40px no-repeat;
+          background: url(../assets/icons/footer-icons/phone.svg) 0 center /
+            40px no-repeat;
+
+          &:hover {
+            background: url(../assets/icons/footer-icons/phone-hover.svg) 0
+              center / 40px no-repeat;
+          }
         }
       }
     }
@@ -45,7 +57,13 @@
 
       & .footer__contacts-link {
         padding-left: 42px;
-        background: url(../assets/icons/pin.svg) 0 center / 22px no-repeat;
+        background: url(../assets/icons/footer-icons/pin.svg) 0 center / 22px
+          no-repeat;
+
+        &:hover {
+          background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center /
+            22px no-repeat;
+        }
 
         &:last-of-type {
           padding: 4px 0 4px 42px;
@@ -61,6 +79,11 @@
     line-height: 115%;
     letter-spacing: 0.06em;
     color: var.$primary-color;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var.$text-color-active;
+    }
   }
 
   &__img {

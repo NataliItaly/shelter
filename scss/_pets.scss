@@ -17,6 +17,11 @@
     color: var.$text-color-primary;
   }
 
+  .logo:hover .logo__subtitle,
+  .logo:hover .logo__title {
+    color: var.$primary-dark-color;
+  }
+
   .friends__list {
     flex-wrap: wrap;
     column-gap: 40px;
