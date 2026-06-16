@@ -44,6 +44,13 @@
       var.$primary-color;
     border-radius: 9px;
     margin-top: -1px;
+    transition: 0.4s;
+
+    &:hover {
+      background:
+        url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
+        var.$primary-light-color;
+    }
   }
 
   &__info {
