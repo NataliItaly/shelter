@@ -87,7 +87,17 @@
 
         &:last-of-type {
           padding: 4px 0 4px 42px;
+
+          @media (max-width: 768px) {
+            padding-top: 6px;
+          }
         }
+      }
+    }
+
+    @media (max-width: 768px) {
+      & .footer__contacts-link:first-of-type {
+        margin-top: -2px;
       }
     }
   }

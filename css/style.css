@@ -268,13 +268,13 @@ h4 {
   overflow: hidden;
 }
 .friends__list {
+  max-width: 990px;
   display: flex;
-  justify-content: center;
   gap: 90px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
   overflow: hidden;
 }
-@media (max-width: 1132px) {
+@media (max-width: 1180px) {
   .friends__list {
     gap: 40px;
     width: 580px;
@@ -311,7 +311,7 @@ h4 {
   background: transparent;
 }
 .friends__btn {
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
 .friends__slider-buttons {
   position: absolute;
@@ -522,6 +522,16 @@ h4 {
 }
 .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
   padding: 4px 0 4px 42px;
+}
+@media (max-width: 768px) {
+  .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
+    padding-top: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__column .footer__contacts-link:first-of-type {
+    margin-top: -2px;
+  }
 }
 .footer__contacts-link {
   display: block;
