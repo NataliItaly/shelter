@@ -7,6 +7,10 @@
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%),
     #211f20;
 
+  @media (max-width: 1132px) {
+    padding-top: 150px;
+  }
+
   &__container {
     display: flex;
     gap: 42px;
@@ -17,6 +21,12 @@
     flex-direction: column;
     gap: 42px;
     padding-top: 164px;
+
+    @media (max-width: 1132px) {
+      width: 460px;
+      padding-top: 0;
+      align-self: center;
+    }
   }
 
   &__title {
@@ -35,8 +45,30 @@
   }
 
   &__img {
+    @media (max-width: 1132px) {
+      align-self: end;
+    }
+
     img {
       display: block;
+
+      @media (max-width: 1132px) {
+        width: 74vw;
+      }
+    }
+  }
+
+  &__btn {
+    @media (max-width: 1132px) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__container {
+    @media (max-width: 1132px) {
+      flex-direction: column;
+      gap: 100px;
     }
   }
 }

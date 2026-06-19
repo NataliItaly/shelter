@@ -8,6 +8,12 @@
     justify-content: center;
     gap: 30px;
 
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+    }
+
     & img {
       width: 505px;
       height: 261px;
@@ -45,6 +51,10 @@
     border-radius: 9px;
     margin-top: -1px;
     transition: 0.4s;
+
+    @media (max-width: 920px) {
+      margin-top: 0;
+    }
 
     &:hover {
       background:

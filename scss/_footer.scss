@@ -7,10 +7,21 @@
     #211f20;
   padding: 40px 0 0;
 
+  @media (max-width: 1240px) {
+    padding: 32px 0 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     gap: 120px;
+
+    @media (max-width: 1240px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 60px;
+      row-gap: 55px;
+    }
   }
 
   &__title {
@@ -18,11 +29,16 @@
   }
 
   &__column {
-    height: 234px;
+    height: 252px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 18px;
+
+    @media (max-width: 1240px) {
+      height: 234px;
+      padding-top: 0;
+    }
 
     &:first-of-type {
       width: 278px;
@@ -60,6 +76,10 @@
         background: url(../assets/icons/footer-icons/pin.svg) 0 center / 22px
           no-repeat;
 
+        &:last-of-type {
+          padding-top: 5px;
+        }
+
         &:hover {
           background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center /
             22px no-repeat;
@@ -87,6 +107,10 @@
   }
 
   &__img {
+    @media (max-width: 1240px) {
+      padding-top: 10px;
+    }
+
     img {
       display: block;
     }

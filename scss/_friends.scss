@@ -9,14 +9,22 @@
   }
 
   &__slider {
+    max-width: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   &__list {
     display: flex;
     justify-content: center;
     gap: 90px;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
+    overflow: hidden;
+
+    @media (max-width: 1132px) {
+      gap: 40px;
+      width: 580px;
+    }
   }
 
   &__item {

@@ -15,6 +15,11 @@
     row-gap: 55px;
     flex-wrap: wrap;
     margin: 0 auto;
+
+    @media (max-width: 770px) {
+      column-gap: 60px;
+      row-gap: 54px;
+    }
   }
 
   &__item {
@@ -22,6 +27,10 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+
+    @media (max-width: 770px) {
+      width: 170px;
+    }
 
     &-title {
       font-family: var.$title-font-family;
