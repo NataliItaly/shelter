@@ -4,7 +4,7 @@
   background: var.$light-bg-color;
 
   @media (max-width: 380px) {
-    padding-top: 40px;
+    padding-top: 41px;
   }
 
   &__container {
@@ -19,6 +19,7 @@
     }
 
     @media (max-width: 440px) {
+      gap: 31px;
       padding: 0 10px;
     }
 
@@ -47,12 +48,13 @@
     @media (max-width: 440px) {
       width: 100%;
       align-items: center;
+      gap: 25px;
     }
   }
 
   &__title {
     @media (max-width: 440px) {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
 
@@ -64,7 +66,9 @@
     color: var.$text-color-primary-2;
 
     @media (max-width: 440px) {
-      //text-align: center;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.07em;
     }
   }
 
@@ -89,6 +93,9 @@
     }
 
     @media (max-width: 440px) {
+      font-size: 15px;
+      letter-spacing: 0.8px;
+      padding: 13px 15px 13px 60px;
       margin: 0 auto;
     }
 
@@ -104,5 +111,11 @@
     font-size: 12px;
     line-height: 1.5;
     color: var.$text-color-secondary-2;
+
+    @media (max-width: 440px) {
+      max-width: 280px;
+      text-align: justify;
+      margin: -3px auto 0;
+    }
   }
 }
