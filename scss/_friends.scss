@@ -4,8 +4,22 @@
   background: var.$light-bg-color;
   padding-bottom: 73px;
 
+  @media (max-width: 440px) {
+    padding-bottom: 44px;
+  }
+
+  &__container {
+    @media (max-width: 380px) {
+      padding: 0 10px;
+    }
+  }
+
   &__title {
     text-align: center;
+
+    @media (max-width: 380px) {
+      margin-bottom: 43px;
+    }
   }
 
   &__slider {
@@ -24,6 +38,12 @@
     @media (max-width: 1180px) {
       gap: 40px;
       width: 580px;
+    }
+
+    @media (max-width: 740px) {
+      gap: 0;
+      width: 270px;
+      padding-bottom: 72px;
     }
   }
 
@@ -64,15 +84,26 @@
 
   &__btn {
     margin: 60px auto 0;
+
+    @media (max-width: 740px) {
+      margin: 43px auto 0;
+    }
   }
 
   &__slider-buttons {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 50%;
+    transform: translateY(50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 740px) {
+      bottom: 0;
+      transform: none;
+      justify-content: center;
+      gap: 80px;
+    }
   }
 
   &__slider-btn {

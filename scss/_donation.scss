@@ -3,6 +3,10 @@
 .donation {
   background: var.$light-bg-color;
 
+  @media (max-width: 380px) {
+    padding-top: 40px;
+  }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -14,10 +18,23 @@
       gap: 50px;
     }
 
+    @media (max-width: 440px) {
+      padding: 0 10px;
+    }
+
     & img {
       width: 505px;
       height: 261px;
       margin-top: 10px;
+
+      @media (max-width: 580px) {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 340px) {
+        max-width: 260px;
+      }
     }
   }
 
@@ -26,6 +43,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: 440px) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @media (max-width: 440px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__subtitle {
@@ -34,6 +62,10 @@
     line-height: 110%;
     letter-spacing: 0.06em;
     color: var.$text-color-primary-2;
+
+    @media (max-width: 440px) {
+      //text-align: center;
+    }
   }
 
   &__card {
@@ -54,6 +86,10 @@
 
     @media (max-width: 920px) {
       margin-top: 0;
+    }
+
+    @media (max-width: 440px) {
+      margin: 0 auto;
     }
 
     &:hover {
