@@ -3,15 +3,39 @@
 .donation {
   background: var.$light-bg-color;
 
+  @media (max-width: 380px) {
+    padding-top: 41px;
+  }
+
   &__container {
     display: flex;
     justify-content: center;
     gap: 30px;
 
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+    }
+
+    @media (max-width: 440px) {
+      gap: 31px;
+      padding: 0 10px;
+    }
+
     & img {
       width: 505px;
       height: 261px;
       margin-top: 10px;
+
+      @media (max-width: 580px) {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 340px) {
+        max-width: 260px;
+      }
     }
   }
 
@@ -20,6 +44,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: 440px) {
+      width: 100%;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+
+  &__title {
+    @media (max-width: 440px) {
+      margin-bottom: 0;
+    }
   }
 
   &__subtitle {
@@ -28,6 +64,12 @@
     line-height: 110%;
     letter-spacing: 0.06em;
     color: var.$text-color-primary-2;
+
+    @media (max-width: 440px) {
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.07em;
+    }
   }
 
   &__card {
@@ -46,10 +88,23 @@
     margin-top: -1px;
     transition: 0.4s;
 
-    &:hover {
-      background:
-        url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
-        var.$primary-light-color;
+    @media (max-width: 920px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 440px) {
+      font-size: 15px;
+      letter-spacing: 0.8px;
+      padding: 13px 15px 13px 60px;
+      margin: 0 auto;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background:
+          url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
+          var.$primary-light-color;
+      }
     }
   }
 
@@ -58,5 +113,11 @@
     font-size: 12px;
     line-height: 1.5;
     color: var.$text-color-secondary-2;
+
+    @media (max-width: 440px) {
+      max-width: 280px;
+      text-align: justify;
+      margin: -3px auto 0;
+    }
   }
 }
