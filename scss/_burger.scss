@@ -1,0 +1,23 @@
+@use './variables' as var;
+
+.burger {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: 30px;
+  height: 22px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+
+  @media (max-width: 720px) {
+    display: flex;
+  }
+
+  &__line {
+    width: 100%;
+    height: 2px;
+    background: var.$primary-color;
+    transition: 0.5s all ease-out;
+  }
+}
