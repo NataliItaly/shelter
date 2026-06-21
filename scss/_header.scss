@@ -59,9 +59,11 @@
       transition: all 0.4s;
     }
 
-    &:hover::after {
-      width: 100%;
-      background: var.$text-color-secondary-2;
+    @media (hover: hover) {
+      &:hover::after {
+        width: 100%;
+        background: var.$text-color-secondary-2;
+      }
     }
 
     &_active {

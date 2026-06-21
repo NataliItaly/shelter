@@ -63,9 +63,11 @@
           background: url(../assets/icons/footer-icons/mail.svg) 0 center / 40px
             no-repeat;
 
-          &:hover {
-            background: url(../assets/icons/footer-icons/mail-hover.svg) 0
-              center / 40px no-repeat;
+          @media (hover: hover) {
+            &:hover {
+              background: url(../assets/icons/footer-icons/mail-hover.svg) 0
+                center / 40px no-repeat;
+            }
           }
         }
 
@@ -73,9 +75,11 @@
           background: url(../assets/icons/footer-icons/phone.svg) 0 center /
             40px no-repeat;
 
-          &:hover {
-            background: url(../assets/icons/footer-icons/phone-hover.svg) 0
-              center / 40px no-repeat;
+          @media (hover: hover) {
+            &:hover {
+              background: url(../assets/icons/footer-icons/phone-hover.svg) 0
+                center / 40px no-repeat;
+            }
           }
         }
       }
@@ -99,9 +103,11 @@
           padding-top: 5px;
         }
 
-        &:hover {
-          background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center /
-            22px no-repeat;
+        @media (hover: hover) {
+          &:hover {
+            background: url(../assets/icons/footer-icons/pin-hover.svg) 0
+              center / 22px no-repeat;
+          }
         }
 
         &:last-of-type {
@@ -150,8 +156,10 @@
     color: var.$primary-color;
     transition: all 0.3s;
 
-    &:hover {
-      color: var.$text-color-active;
+    @media (hover: hover) {
+      .element:hover {
+        color: var.$text-color-active;
+      }
     }
   }
 

@@ -60,9 +60,11 @@ h4 {
 .btn_secondary {
   background: #fff;
 }
-.btn:hover {
-  background: #fddcc4;
-  border-color: #fddcc4;
+@media (hover: hover) {
+  .btn:hover {
+    background: #fddcc4;
+    border-color: #fddcc4;
+  }
 }
 
 .header {
@@ -118,9 +120,11 @@ h4 {
   background: #f1cdb3;
   transition: all 0.4s;
 }
-.header__menu-link:hover::after {
-  width: 100%;
-  background: #b2b2b2;
+@media (hover: hover) {
+  .header__menu-link:hover::after {
+    width: 100%;
+    background: #b2b2b2;
+  }
 }
 .header__menu-link_active {
   color: #fafafa;
@@ -406,13 +410,17 @@ h4 {
   cursor: pointer;
   transition: all 0.3s;
 }
-.friends__item:hover {
-  background: #fff;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+@media (hover: hover) {
+  .friends__item:hover {
+    background: #fff;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  }
 }
-.friends__item:hover .btn {
-  background: #fddcc4;
-  border-color: #fddcc4;
+@media (hover: hover) {
+  .friends__item:hover .btn {
+    background: #fddcc4;
+    border-color: #fddcc4;
+  }
 }
 .friends__item-title {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -461,8 +469,10 @@ h4 {
 .friends__slider-btn-next, .friends__slider-btn-forward {
   transform: rotate(-180deg);
 }
-.friends__slider-btn:hover {
-  background: url(../assets/icons/slider-icon.svg) center/14px no-repeat, #fddcc4;
+@media (hover: hover) {
+  .friends__slider-btn:hover {
+    background: url(../assets/icons/slider-icon.svg) center/14px no-repeat, #fddcc4;
+  }
 }
 
 .help {
@@ -648,8 +658,10 @@ h4 {
     margin: 0 auto;
   }
 }
-.donation__card:hover {
-  background: url(../assets/icons/credit-card.svg) 15px center/30px no-repeat, #fddcc4;
+@media (hover: hover) {
+  .donation__card:hover {
+    background: url(../assets/icons/credit-card.svg) 15px center/30px no-repeat, #fddcc4;
+  }
 }
 .donation__info {
   font-style: italic;
@@ -728,14 +740,18 @@ h4 {
 .footer__column:first-of-type .footer__contacts-link:first-of-type {
   background: url(../assets/icons/footer-icons/mail.svg) 0 center/40px no-repeat;
 }
-.footer__column:first-of-type .footer__contacts-link:first-of-type:hover {
-  background: url(../assets/icons/footer-icons/mail-hover.svg) 0 center/40px no-repeat;
+@media (hover: hover) {
+  .footer__column:first-of-type .footer__contacts-link:first-of-type:hover {
+    background: url(../assets/icons/footer-icons/mail-hover.svg) 0 center/40px no-repeat;
+  }
 }
 .footer__column:first-of-type .footer__contacts-link:last-of-type {
   background: url(../assets/icons/footer-icons/phone.svg) 0 center/40px no-repeat;
 }
-.footer__column:first-of-type .footer__contacts-link:last-of-type:hover {
-  background: url(../assets/icons/footer-icons/phone-hover.svg) 0 center/40px no-repeat;
+@media (hover: hover) {
+  .footer__column:first-of-type .footer__contacts-link:last-of-type:hover {
+    background: url(../assets/icons/footer-icons/phone-hover.svg) 0 center/40px no-repeat;
+  }
 }
 @media (max-width: 440px) {
   .footer__column:first-of-type {
@@ -754,8 +770,10 @@ h4 {
 .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
   padding-top: 5px;
 }
-.footer__column:nth-of-type(2) .footer__contacts-link:hover {
-  background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center/22px no-repeat;
+@media (hover: hover) {
+  .footer__column:nth-of-type(2) .footer__contacts-link:hover {
+    background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center/22px no-repeat;
+  }
 }
 .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
   padding: 4px 0 4px 42px;
@@ -801,8 +819,10 @@ h4 {
   color: #f1cdb3;
   transition: all 0.3s;
 }
-.footer__contacts-link:hover {
-  color: #fafafa;
+@media (hover: hover) {
+  .footer__contacts-link .element:hover {
+    color: #fafafa;
+  }
 }
 @media (max-width: 1240px) {
   .footer__img {
@@ -834,16 +854,20 @@ h4 {
 .pets .header__menu-link {
   color: #545454;
 }
-.pets .header__menu-link:hover::after {
-  background: #fddcc4;
+@media (hover: hover) {
+  .pets .header__menu-link:hover::after {
+    background: #fddcc4;
+  }
 }
 .pets .logo__subtitle,
 .pets .header__menu-link_active {
   color: #292929;
 }
-.pets .logo:hover .logo__subtitle,
-.pets .logo:hover .logo__title {
-  color: #af7348;
+@media (hover: hover) {
+  .pets .logo:hover .logo__subtitle,
+  .pets .logo:hover .logo__title {
+    color: #af7348;
+  }
 }
 @media (max-width: 780px) {
   .pets .friends {
@@ -914,20 +938,26 @@ h4 {
 .pets .friends__slider-btn-page {
   background: #f1cdb3;
 }
-.pets .friends__slider-btn-page:hover {
-  background: #fddcc4;
+@media (hover: hover) {
+  .pets .friends__slider-btn-page:hover {
+    background: #fddcc4;
+  }
 }
 .pets .friends__pagination-btn {
   background: url(../assets/icons/slider-icon-pets.svg) center no-repeat, transparent;
 }
-.pets .friends__pagination-btn:hover {
-  background: url(../assets/icons/slider-icon-pets.svg) center no-repeat, #fddcc4;
+@media (hover: hover) {
+  .pets .friends__pagination-btn:hover {
+    background: url(../assets/icons/slider-icon-pets.svg) center no-repeat, #fddcc4;
+  }
 }
 .pets .friends__pagination-btn-pr {
   background: url(../assets/icons/slider-icon-single.svg) center no-repeat, transparent;
 }
-.pets .friends__pagination-btn-pr:hover {
-  background: url(../assets/icons/slider-icon-single.svg) center no-repeat, #fddcc4;
+@media (hover: hover) {
+  .pets .friends__pagination-btn-pr:hover {
+    background: url(../assets/icons/slider-icon-single.svg) center no-repeat, #fddcc4;
+  }
 }
 
 .burger {

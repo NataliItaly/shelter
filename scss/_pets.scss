@@ -14,8 +14,10 @@
     color: var.$text-color-primary-2;
   }
 
-  .header__menu-link:hover::after {
-    background: var.$primary-light-color;
+  @media (hover: hover) {
+    .header__menu-link:hover::after {
+      background: var.$primary-light-color;
+    }
   }
 
   .logo__subtitle,
@@ -23,9 +25,11 @@
     color: var.$text-color-primary;
   }
 
-  .logo:hover .logo__subtitle,
-  .logo:hover .logo__title {
-    color: var.$primary-dark-color;
+  @media (hover: hover) {
+    .logo:hover .logo__subtitle,
+    .logo:hover .logo__title {
+      color: var.$primary-dark-color;
+    }
   }
 
   .friends {
@@ -103,8 +107,10 @@
   .friends__slider-btn-page {
     background: var.$primary-color;
 
-    &:hover {
-      background: var.$primary-light-color;
+    @media (hover: hover) {
+      &:hover {
+        background: var.$primary-light-color;
+      }
     }
   }
 
@@ -113,10 +119,12 @@
       url(../assets/icons/slider-icon-pets.svg) center no-repeat,
       transparent;
 
-    &:hover {
-      background:
-        url(../assets/icons/slider-icon-pets.svg) center no-repeat,
-        var.$primary-light-color;
+    @media (hover: hover) {
+      &:hover {
+        background:
+          url(../assets/icons/slider-icon-pets.svg) center no-repeat,
+          var.$primary-light-color;
+      }
     }
   }
 
@@ -125,10 +133,12 @@
       url(../assets/icons/slider-icon-single.svg) center no-repeat,
       transparent;
 
-    &:hover {
-      background:
-        url(../assets/icons/slider-icon-single.svg) center no-repeat,
-        var.$primary-light-color;
+    @media (hover: hover) {
+      &:hover {
+        background:
+          url(../assets/icons/slider-icon-single.svg) center no-repeat,
+          var.$primary-light-color;
+      }
     }
   }
 }

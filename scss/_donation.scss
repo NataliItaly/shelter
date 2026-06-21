@@ -99,10 +99,12 @@
       margin: 0 auto;
     }
 
-    &:hover {
-      background:
-        url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
-        var.$primary-light-color;
+    @media (hover: hover) {
+      &:hover {
+        background:
+          url(../assets/icons/credit-card.svg) 15px center / 30px no-repeat,
+          var.$primary-light-color;
+      }
     }
   }
 

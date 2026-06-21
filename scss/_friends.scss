@@ -59,14 +59,18 @@
     cursor: pointer;
     transition: all 0.3s;
 
-    &:hover {
-      background: #fff;
-      box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+    @media (hover: hover) {
+      &:hover {
+        background: #fff;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+      }
     }
 
-    &:hover .btn {
-      background: var.$primary-light-color;
-      border-color: var.$primary-light-color;
+    @media (hover: hover) {
+      &:hover .btn {
+        background: var.$primary-light-color;
+        border-color: var.$primary-light-color;
+      }
     }
 
     &-title {
@@ -124,9 +128,13 @@
     }
 
     &:hover {
-      background:
-        url(../assets/icons/slider-icon.svg) center / 14px no-repeat,
-        var.$primary-light-color;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background:
+          url(../assets/icons/slider-icon.svg) center / 14px no-repeat,
+          var.$primary-light-color;
+      }
     }
   }
 }
