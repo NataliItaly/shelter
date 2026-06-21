@@ -7,22 +7,51 @@
     #211f20;
   padding: 40px 0 0;
 
+  @media (max-width: 1240px) {
+    padding: 32px 0 0;
+  }
+
+  @media (max-width: 440px) {
+    padding: 30px 0 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     gap: 120px;
+
+    @media (max-width: 1240px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 60px;
+      row-gap: 55px;
+    }
+
+    @media (max-width: 440px) {
+      gap: 40px;
+      padding: 0 10px;
+    }
   }
 
   &__title {
     color: #fff;
+
+    @media (max-width: 440px) {
+      margin-bottom: 0px;
+    }
   }
 
   &__column {
-    height: 234px;
+    height: 252px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 18px;
+
+    @media (max-width: 1240px) {
+      height: 234px;
+      padding-top: 0;
+    }
 
     &:first-of-type {
       width: 278px;
@@ -34,9 +63,11 @@
           background: url(../assets/icons/footer-icons/mail.svg) 0 center / 40px
             no-repeat;
 
-          &:hover {
-            background: url(../assets/icons/footer-icons/mail-hover.svg) 0
-              center / 40px no-repeat;
+          @media (hover: hover) {
+            &:hover {
+              background: url(../assets/icons/footer-icons/mail-hover.svg) 0
+                center / 40px no-repeat;
+            }
           }
         }
 
@@ -44,11 +75,19 @@
           background: url(../assets/icons/footer-icons/phone.svg) 0 center /
             40px no-repeat;
 
-          &:hover {
-            background: url(../assets/icons/footer-icons/phone-hover.svg) 0
-              center / 40px no-repeat;
+          @media (hover: hover) {
+            &:hover {
+              background: url(../assets/icons/footer-icons/phone-hover.svg) 0
+                center / 40px no-repeat;
+            }
           }
         }
+      }
+
+      @media (max-width: 440px) {
+        height: fit-content;
+        align-items: center;
+        gap: 42px;
       }
     }
 
@@ -60,14 +99,50 @@
         background: url(../assets/icons/footer-icons/pin.svg) 0 center / 22px
           no-repeat;
 
-        &:hover {
-          background: url(../assets/icons/footer-icons/pin-hover.svg) 0 center /
-            22px no-repeat;
+        &:last-of-type {
+          padding-top: 5px;
+        }
+
+        @media (hover: hover) {
+          &:hover {
+            background: url(../assets/icons/footer-icons/pin-hover.svg) 0
+              center / 22px no-repeat;
+          }
         }
 
         &:last-of-type {
           padding: 4px 0 4px 42px;
+
+          @media (max-width: 768px) {
+            padding-top: 6px;
+          }
+
+          @media (max-width: 440px) {
+            padding-top: 0px;
+            line-height: 1.4;
+            padding-bottom: 4px;
+          }
+
+          @media (max-width: 380px) {
+            width: 100%;
+          }
         }
+      }
+
+      & .footer__title {
+        width: 270px;
+      }
+
+      @media (max-width: 440px) {
+        height: fit-content;
+        align-items: center;
+        gap: 42px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      & .footer__contacts-link:first-of-type {
+        margin-top: -2px;
       }
     }
   }
@@ -81,14 +156,29 @@
     color: var.$primary-color;
     transition: all 0.3s;
 
-    &:hover {
-      color: var.$text-color-active;
+    @media (hover: hover) {
+      .element:hover {
+        color: var.$text-color-active;
+      }
     }
   }
 
   &__img {
+    @media (max-width: 1240px) {
+      padding-top: 10px;
+    }
+
+    @media (max-width: 440px) {
+      padding-top: 0;
+      margin-top: -1px;
+    }
+
     img {
       display: block;
+
+      @media (max-width: 380px) {
+        max-width: 260px;
+      }
     }
   }
 }

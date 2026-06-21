@@ -22,8 +22,10 @@
     background: #fff;
   }
 
-  &:hover {
-    background: var.$primary-light-color;
-    border-color: var.$primary-light-color;
+  @media (hover: hover) {
+    &:hover {
+      background: var.$primary-light-color;
+      border-color: var.$primary-light-color;
+    }
   }
 }

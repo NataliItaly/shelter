@@ -4,19 +4,47 @@
   background: var.$light-bg-color;
   padding-bottom: 73px;
 
+  @media (max-width: 440px) {
+    padding-bottom: 44px;
+  }
+
+  &__container {
+    @media (max-width: 380px) {
+      padding: 0 10px;
+    }
+  }
+
   &__title {
     text-align: center;
+
+    @media (max-width: 380px) {
+      margin-bottom: 43px;
+    }
   }
 
   &__slider {
+    max-width: 100%;
     position: relative;
+    overflow: hidden;
   }
 
   &__list {
+    max-width: 990px;
     display: flex;
-    justify-content: center;
     gap: 90px;
-    margin-bottom: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @media (max-width: 1180px) {
+      gap: 40px;
+      width: 580px;
+    }
+
+    @media (max-width: 740px) {
+      gap: 0;
+      width: 270px;
+      padding-bottom: 72px;
+    }
   }
 
   &__item {
@@ -31,14 +59,18 @@
     cursor: pointer;
     transition: all 0.3s;
 
-    &:hover {
-      background: #fff;
-      box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+    @media (hover: hover) {
+      &:hover {
+        background: #fff;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+      }
     }
 
-    &:hover .btn {
-      background: var.$primary-light-color;
-      border-color: var.$primary-light-color;
+    @media (hover: hover) {
+      &:hover .btn {
+        background: var.$primary-light-color;
+        border-color: var.$primary-light-color;
+      }
     }
 
     &-title {
@@ -55,16 +87,27 @@
   }
 
   &__btn {
-    margin: 0 auto;
+    margin: 60px auto 0;
+
+    @media (max-width: 740px) {
+      margin: 43px auto 0;
+    }
   }
 
   &__slider-buttons {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 50%;
+    transform: translateY(50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 740px) {
+      bottom: 0;
+      transform: none;
+      justify-content: center;
+      gap: 80px;
+    }
   }
 
   &__slider-btn {
@@ -84,15 +127,14 @@
       transform: rotate(-180deg);
     }
 
-    /* &-backward,
-    &-prev {
-      transform: rotate(-180deg);
-    } */
-
     &:hover {
-      background:
-        url(../assets/icons/slider-icon.svg) center / 14px no-repeat,
-        var.$primary-light-color;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background:
+          url(../assets/icons/slider-icon.svg) center / 14px no-repeat,
+          var.$primary-light-color;
+      }
     }
   }
 }

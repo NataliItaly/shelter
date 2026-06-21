@@ -23,6 +23,17 @@
     font-size: 13px;
   }
 
+  &__nav {
+    @media (max-width: 720px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      transform: translateX(200%);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
   &__menu {
     display: flex;
     align-items: center;
@@ -48,9 +59,11 @@
       transition: all 0.4s;
     }
 
-    &:hover::after {
-      width: 100%;
-      background: var.$text-color-secondary-2;
+    @media (hover: hover) {
+      &:hover::after {
+        width: 100%;
+        background: var.$text-color-secondary-2;
+      }
     }
 
     &_active {
