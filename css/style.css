@@ -869,6 +869,9 @@ h4 {
     color: #af7348;
   }
 }
+.pets .friends {
+  padding-bottom: 100px;
+}
 @media (max-width: 780px) {
   .pets .friends {
     padding-bottom: 76px;
@@ -880,7 +883,12 @@ h4 {
   }
 }
 .pets .friends__title {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+@media (max-width: 780px) {
+  .pets .friends__title {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 380px) {
   .pets .friends__title {
@@ -888,21 +896,23 @@ h4 {
   }
 }
 .pets .friends__list {
+  max-width: 1200px;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 30px;
-  margin-bottom: 88px;
+  margin-bottom: 62px;
 }
 @media (max-width: 780px) {
   .pets .friends__list {
     row-gap: 31px;
-    margin-bottom: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 41px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 380px) {
   .pets .friends__list {
-    padding-bottom: 0px;
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 }
 @media (max-width: 780px) {
@@ -910,7 +920,7 @@ h4 {
     display: none;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 380px) {
   .pets .friends__list .friends__item:nth-of-type(4), .pets .friends__list .friends__item:nth-of-type(5), .pets .friends__list .friends__item:nth-of-type(6) {
     display: none;
   }
@@ -920,6 +930,7 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 20px;
+  transform: none;
 }
 @media (max-width: 780px) {
   .pets .friends__slider-buttons {
@@ -957,6 +968,51 @@ h4 {
 @media (hover: hover) {
   .pets .friends__pagination-btn-pr:hover {
     background: url(../assets/icons/slider-icon-single.svg) center no-repeat, #fddcc4;
+  }
+}
+@media (max-width: 780px) {
+  .pets .footer {
+    padding: 15px 0 0;
+  }
+}
+@media (max-width: 380px) {
+  .pets .footer {
+    padding: 14px 0 0;
+  }
+}
+.pets .footer__column {
+  padding-top: 16px;
+}
+.pets .footer__column:first-of-type .footer__contacts-link {
+  padding: 4px 0 6px 60px;
+}
+.pets .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
+  padding: 4px 0 7px 42px;
+}
+@media (max-width: 380px) {
+  .pets .footer__column:nth-of-type(2) .footer__contacts-link:last-of-type {
+    padding: 1px 0 7px 42px;
+  }
+}
+@media (max-width: 780px) {
+  .pets .footer__column {
+    height: 251px;
+  }
+}
+@media (max-width: 380px) {
+  .pets .footer__column {
+    height: fit-content;
+  }
+}
+@media (max-width: 380px) {
+  .pets .footer__column:first-of-type {
+    gap: 40px;
+  }
+}
+@media (max-width: 380px) {
+  .pets .footer__column:nth-of-type(2) {
+    padding-top: 0;
+    gap: 40px;
   }
 }
 
