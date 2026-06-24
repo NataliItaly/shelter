@@ -570,7 +570,7 @@ h4 {
   justify-content: center;
   gap: 30px;
 }
-@media (max-width: 920px) {
+@media (max-width: 964px) {
   .donation__container {
     flex-direction: column-reverse;
     align-items: center;
