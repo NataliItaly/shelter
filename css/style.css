@@ -87,7 +87,7 @@ h4 {
 .header__subtile {
   font-size: 13px;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .header__nav {
     position: fixed;
     top: 0;
@@ -570,7 +570,7 @@ h4 {
   justify-content: center;
   gap: 30px;
 }
-@media (max-width: 920px) {
+@media (max-width: 964px) {
   .donation__container {
     flex-direction: column-reverse;
     align-items: center;
@@ -1026,7 +1026,7 @@ h4 {
   justify-content: space-between;
   display: none;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .burger {
     display: flex;
   }
