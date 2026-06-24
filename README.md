@@ -4,7 +4,7 @@ The task [link](https://github.com/rolling-scopes-school/tasks/blob/master/stage
 
 ## Deploy
 
-The site is live on [link](https://nataliitaly.github.io/shelter/pets.html)
+The site is live on [link](https://nataliitaly.github.io/shelter/index.html)
 
 ## Pull Request
 
