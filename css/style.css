@@ -323,7 +323,6 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 160%;
-  padding-left: 4px;
 }
 .about__content p:not(:last-child) {
   margin-bottom: 25px;
@@ -336,7 +335,6 @@ h4 {
 @media (max-width: 960px) {
   .about__content {
     max-width: 430px;
-    padding-left: 0;
     padding-top: 1px;
   }
 }
@@ -344,6 +342,9 @@ h4 {
   .about__content {
     margin-top: -1px;
   }
+}
+.about__text {
+  max-width: 430px;
 }
 @media (max-width: 380px) {
   .about__text {
