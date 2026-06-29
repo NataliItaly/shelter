@@ -5,7 +5,9 @@ import { pagination } from './currentPageState.js';
 
 export default function prevPage(data, itemsNumber) {
   const prevBtn = document.getElementById('prev-btn');
-  console.log('current', pagination.currentPage);
+  const firstBtn = document.getElementById('first-btn');
+  const lastBtn = document.getElementById('last-btn');
+
   prevBtn.addEventListener('click', function () {
     pagination.currentPage--;
     console.log('current', pagination.currentPage);
@@ -14,17 +16,20 @@ export default function prevPage(data, itemsNumber) {
     setCurrentPage();
 
     if (pagination.currentPage <= 1) {
-      //pagination.currentPage = 1;
       prevBtn.disabled = true;
+      firstBtn.disabled = true;
     } else {
       prevBtn.disabled = false;
+      firstBtn.disabled = false;
     }
 
     const nextBtn = document.getElementById('next-btn');
     if (itemsNumber / itemsPerPage() <= pagination.currentPage) {
       nextBtn.disabled = true;
+      lastBtn.disabled = true;
     } else {
       nextBtn.disabled = false;
+      lastBtn.disabled = false;
     }
   });
 }
