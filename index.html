@@ -46,7 +46,7 @@
         </nav>
       </div>
     </header>
-    <main class="main">
+    <main class="main" id="home-page">
       <section class="hero" id="hero">
         <div class="container hero__container">
           <div class="hero__content">
@@ -109,31 +109,20 @@
             <br />
             are looking for a house
           </h2>
-          <div class="friends__slider">
-            <ul class="friends__list">
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-katrine.png" alt="Cat Katrine" />
-                <h3 class="friends__item-title">Katrine</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img
-                  src="./assets/images/pets-jennifer.png"
-                  alt="Dog Jennifer"
-                />
-                <h3 class="friends__item-title">Jennifer</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-woody.png" alt="Dog Woody" />
-                <h3 class="friends__item-title">Woody</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-            </ul>
+          <div class="friends__slider" id="slider">
+            <div class="friends__slider-wrapper">
+              <ul class="friends__list" id="slider-list"></ul>
+            </div>
             <div class="friends__slider-buttons">
-              <button class="btn btn_secondary friends__slider-btn"></button>
+              <button
+                class="btn btn_secondary friends__slider-btn"
+                id="prev-slider-btn"
+                aria-label="Previous slide"
+              ></button>
               <button
                 class="btn btn_secondary friends__slider-btn friends__slider-btn-next"
+                id="next-slider-btn"
+                aria-label="Next slide"
               ></button>
             </div>
           </div>
