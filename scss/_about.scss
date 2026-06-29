@@ -34,7 +34,6 @@
   &__content {
     max-width: 437px;
     @include mix.basic-text;
-    padding-left: 4px;
 
     & p:not(:last-child) {
       margin-bottom: 25px;
@@ -46,7 +45,6 @@
 
     @media (max-width: 960px) {
       max-width: 430px;
-      padding-left: 0;
       padding-top: 1px;
     }
 
@@ -56,6 +54,8 @@
   }
 
   &__text {
+    max-width: 430px;
+
     @media (max-width: 380px) {
       text-align: justify;
     }
