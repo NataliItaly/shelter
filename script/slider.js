@@ -17,9 +17,9 @@ export default function slider(data) {
   const gap = parseInt(getComputedStyle(sliderList).gap);
   const step = itemWidth + gap;
 
-  function updateSlider() {
+  /* function updateSlider() {
     sliderList.style.transform = `translateX(-${sliderState.currentIndex * (itemWidth + gap)}px)`;
-  }
+  } */
 
   let direction = null;
   let isAnimating = false;
@@ -41,7 +41,9 @@ export default function slider(data) {
   }
 
   function handleTransitionEnd() {
+    if (!isAnimating) return;
     sliderList.style.transition = 'none';
+    sliderList.style.pointerEvents = 'none';
 
     if (direction === 'next') {
       sliderList.append(sliderList.firstElementChild);
@@ -54,23 +56,20 @@ export default function slider(data) {
     // Force browser to apply the styles
     sliderList.offsetHeight;
 
-    sliderList.style.transition = 'transform .5s';
+    sliderList.style.transition = 'transform 0.5s';
 
-    direction = null;
-    isAnimating = false;
+    requestAnimationFrame(() => {
+      direction = null;
+      isAnimating = false;
+      sliderList.style.pointerEvents = 'auto';
+    });
   }
 
   nextBtn.addEventListener('click', function () {
-    sliderState.currentIndex++;
-    console.log('index', sliderState.currentIndex);
-    //updateSlider();
     moveNext();
   });
 
   prevBtn.addEventListener('click', function () {
-    sliderState.currentIndex--;
-    console.log('index', sliderState.currentIndex);
-    //updateSlider();
     movePrev();
   });
 
