@@ -17,6 +17,10 @@ body {
   font-family: var.$primary-font-family;
   font-weight: 400;
   font-style: normal;
+
+  &.non-scroll {
+    overflow-y: hidden;
+  }
 }
 
 h1,
