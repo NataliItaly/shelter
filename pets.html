@@ -11,7 +11,7 @@
       type="image/x-icon"
     />
   </head>
-  <body class="pets">
+  <body class="pets" id="pets">
     <div class="burger">
       <span class="burger__line"></span>
       <span class="burger__line"></span>
@@ -59,54 +59,7 @@
             are looking for a house
           </h2>
           <div class="friends__slider">
-            <ul class="friends__list">
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-katrine.png" alt="Cat Katrine" />
-                <h3 class="friends__item-title">Katrine</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img
-                  src="./assets/images/pets-jennifer.png"
-                  alt="Dog Jennifer"
-                />
-                <h3 class="friends__item-title">Jennifer</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-woody.png" alt="Dog Woody" />
-                <h3 class="friends__item-title">Woody</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-sophia.png" alt="Cat Sophia" />
-                <h3 class="friends__item-title">Sophia</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-timmy.png" alt="Cat Timmy" />
-                <h3 class="friends__item-title">Timmy</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-charly.png" alt="Dog Charly" />
-                <h3 class="friends__item-title">Charly</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img
-                  src="./assets/images/pets-scarlet.png"
-                  alt="Dog Scarlett"
-                />
-                <h3 class="friends__item-title">Scarlett</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-              <li class="friends__item" aria-label="Open details">
-                <img src="./assets/images/pets-freddie.png" alt="Cat Freddie" />
-                <h3 class="friends__item-title">Freddie</h3>
-                <span class="btn btn_secondary">Learn more</span>
-              </li>
-            </ul>
+            <ul class="friends__list" id="pets-list"></ul>
             <div class="friends__slider-buttons">
               <button
                 class="btn btn_secondary friends__slider-btn friends__slider-btn-backward friends__pagination-btn"
@@ -120,9 +73,7 @@
               <button
                 class="btn btn_secondary friends__slider-btn friends__slider-btn-page"
                 id="page"
-              >
-                1
-              </button>
+              ></button>
               <button
                 class="btn btn_secondary friends__slider-btn friends__pagination-btn-pr friends__slider-btn-next"
                 id="next-btn"
@@ -175,5 +126,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="./script/script.js"></script>
   </body>
 </html>
