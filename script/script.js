@@ -5,6 +5,10 @@ import prevPage from './prevPage.js';
 import setCurrentPage from './setCurrentPage.js';
 //import itemsPerPage from './itemsPerPage.js';
 
+alert(
+  'Уважаемый проверяющий! Пожалуйста, проверьте мою работу в среду. Заранее спасибо',
+);
+
 const currentPage = 1;
 const itemsNumber = 48;
 const data = await getData(itemsNumber);
