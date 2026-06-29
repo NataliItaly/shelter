@@ -382,27 +382,40 @@ h4 {
   position: relative;
   overflow: hidden;
 }
-.friends__list {
-  max-width: 990px;
-  display: flex;
-  gap: 90px;
+.friends__slider-wrapper {
+  width: 990px;
   margin: 0 auto;
   overflow: hidden;
 }
 @media (max-width: 1180px) {
+  .friends__slider-wrapper {
+    width: 580px;
+  }
+}
+@media (max-width: 740px) {
+  .friends__slider-wrapper {
+    width: 270px;
+    padding-bottom: 72px;
+  }
+}
+.friends__list {
+  max-width: 990px;
+  display: flex;
+  gap: 90px;
+  transition: 0.6s transform ease-in;
+}
+@media (max-width: 1180px) {
   .friends__list {
     gap: 40px;
-    width: 580px;
   }
 }
 @media (max-width: 740px) {
   .friends__list {
     gap: 0;
-    width: 270px;
-    padding-bottom: 72px;
   }
 }
 .friends__item {
+  flex: 0 0 auto;
   width: 270px;
   display: flex;
   flex-direction: column;
@@ -412,7 +425,7 @@ h4 {
   padding-bottom: 30px;
   border-radius: 9px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 @media (hover: hover) {
   .friends__item:hover {
