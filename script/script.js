@@ -5,6 +5,8 @@ import prevPage from './prevPage.js';
 import setCurrentPage from './setCurrentPage.js';
 import { pagination } from './currentPageState.js';
 //import itemsPerPage from './itemsPerPage.js';
+import firstPageBtn from './firstPageBtn.js';
+import lastPageBtn from './lastPageBtn.js';
 
 alert(
   'Уважаемый проверяющий! Пожалуйста, проверьте мою работу в среду. Заранее спасибо',
@@ -25,4 +27,6 @@ if (petsPage) {
   setCurrentPage(itemsNumber);
   nextPage(data, itemsNumber);
   prevPage(data, itemsNumber);
+  firstPageBtn(data);
+  lastPageBtn(data);
 }
