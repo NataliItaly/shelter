@@ -1,11 +1,12 @@
 import itemsPerPage from './itemsPerPage.js';
+import { pagination } from './currentPageState.js';
 
-export default function setCurrentPage(currentPage, itemsNumber) {
+export default function setCurrentPage(itemsNumber) {
   const pageEl = document.getElementById('page');
 
-  if (itemsNumber / itemsPerPage() >= currentPage) {
+  /* if (itemsNumber / itemsPerPage() >= currentPage) {
     pageEl.textContent = itemsNumber / itemsPerPage();
-  }
+  } */
 
-  pageEl.textContent = currentPage;
+  pageEl.textContent = pagination.currentPage;
 }
