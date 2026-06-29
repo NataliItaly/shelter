@@ -7,16 +7,25 @@ import { pagination } from './currentPageState.js';
 //import itemsPerPage from './itemsPerPage.js';
 import firstPageBtn from './firstPageBtn.js';
 import lastPageBtn from './lastPageBtn.js';
+import slider from './slider.js';
 
-alert(
+/* alert(
   'Уважаемый проверяющий! Пожалуйста, проверьте мою работу в среду. Заранее спасибо',
-);
+); */
 
 const itemsNumber = 48;
 const data = await getData(itemsNumber);
 
+const homePage = document.getElementById('home-page');
+if (homePage) {
+  slider(data);
+
+  window.addEventListener('resize', function () {
+    slider();
+  });
+}
+
 const petsPage = document.getElementById('pets');
-console.log(petsPage);
 if (petsPage) {
   petsList(data, pagination.currentPage);
 
