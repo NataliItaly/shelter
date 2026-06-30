@@ -1133,6 +1133,7 @@ h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #000000;
   background: rgba(41, 41, 41, 0.6);
+  z-index: 200;
 }
 .popup__window {
   max-width: 900px;
@@ -1179,6 +1180,8 @@ h4 {
 .popup__card {
   display: flex;
   gap: 29px;
+  border-radius: 9px;
+  overflow: hidden;
 }
 @media (max-width: 1040px) {
   .popup__card {
