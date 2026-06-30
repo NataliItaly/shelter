@@ -17,10 +17,6 @@ export default function slider(data) {
   const gap = parseInt(getComputedStyle(sliderList).gap);
   const step = itemWidth + gap;
 
-  /* function updateSlider() {
-    sliderList.style.transform = `translateX(-${sliderState.currentIndex * (itemWidth + gap)}px)`;
-  } */
-
   let direction = null;
   let isAnimating = false;
 
