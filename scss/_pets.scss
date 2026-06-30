@@ -9,7 +9,7 @@
     }
 
     &_open {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         .burger__line {
           background: var.$primary-color;
         }
