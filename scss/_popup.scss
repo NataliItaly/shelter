@@ -12,6 +12,7 @@
   font-family: var.$title-font-family;
   color: #000000;
   background: rgba(var.$text-color-primary, 0.6);
+  z-index: 200;
 
   &__window {
     max-width: 900px;
