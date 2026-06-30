@@ -9,10 +9,6 @@ import lastPageBtn from './lastPageBtn.js';
 import slider from './slider.js';
 import burger from './burger.js';
 
-/* alert(
-  'Уважаемый проверяющий! Пожалуйста, проверьте мою работу в среду. Заранее спасибо',
-); */
-
 const itemsNumber = 48;
 const data = await getData(itemsNumber);
 
