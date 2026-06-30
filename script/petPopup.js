@@ -16,7 +16,7 @@ export default function petPopup({
   const closeBtn = createElement('button', 'popup__close-btn');
 
   closeBtn.addEventListener('click', function (e) {
-    popup.remove();
+    e.target.closest('.popup').remove();
     document.body.classList.remove('non-scroll');
   });
 
