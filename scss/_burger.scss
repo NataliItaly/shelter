@@ -9,6 +9,8 @@
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  z-index: 100;
+  transition: 0.6s transform ease-in;
 
   @media (max-width: 767px) {
     display: flex;
@@ -19,5 +21,28 @@
     height: 2px;
     background: var.$primary-color;
     transition: 0.5s all ease-out;
+    transform-origin: center;
+  }
+
+  &_open {
+    transform: rotate(-270deg);
+  }
+}
+
+@keyframes line1 {
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(10px) rotate(45deg);
+  }
+}
+
+@keyframes line3 {
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-10px) rotate(-45deg);
   }
 }

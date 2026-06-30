@@ -7,6 +7,14 @@
     &__line {
       background: #000;
     }
+
+    &_open {
+      @media (max-width: 767px) {
+        .burger__line {
+          background: var.$primary-color;
+        }
+      }
+    }
   }
 
   .logo__title,
