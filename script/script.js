@@ -9,9 +9,9 @@ import firstPageBtn from './firstPageBtn.js';
 import lastPageBtn from './lastPageBtn.js';
 import slider from './slider.js';
 
-/* alert(
+alert(
   'Уважаемый проверяющий! Пожалуйста, проверьте мою работу в среду. Заранее спасибо',
-); */
+);
 
 const itemsNumber = 48;
 const data = await getData(itemsNumber);
