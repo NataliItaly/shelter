@@ -4,10 +4,10 @@ import nextPage from './nextPage.js';
 import prevPage from './prevPage.js';
 import setCurrentPage from './setCurrentPage.js';
 import { pagination } from './currentPageState.js';
-//import itemsPerPage from './itemsPerPage.js';
 import firstPageBtn from './firstPageBtn.js';
 import lastPageBtn from './lastPageBtn.js';
 import slider from './slider.js';
+import burger from './burger.js';
 
 /* alert(
   'Уважаемый проверяющий! Пожалуйста, проверьте мою работу в среду. Заранее спасибо',
@@ -15,6 +15,8 @@ import slider from './slider.js';
 
 const itemsNumber = 48;
 const data = await getData(itemsNumber);
+
+burger();
 
 const homePage = document.getElementById('home-page');
 if (homePage) {
